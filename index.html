@@ -25,28 +25,69 @@
         }
         .photo-block {
             grid-area: photo;
-            background: #dd0b0b;
+            background: #dd0b0b38;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .photo-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image:url(https://lh3.googleusercontent.com/proxy/7JqPHiT4-imSNiNepI5hUEAX_tGC2vOOQy8p-E9DvFOy-dWcXB6rSRNUhwBqH8iN9sstIWePoGfPx_uTkLYmjI4XCnXSEu5wKY_yTpcdMn2y6mqkf0Z8h4ZR6otohEVWkJM);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center;
         }
         .name-block {
-                grid-area: name;
-                background: rgb(19, 211, 35);
+            grid-area: name;
+            background: #13d3233a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 250%;
+            font-weight: bold;
+            color: rgb(207, 128, 128);
         }
         .about-me-block {
             grid-area: about;
-            background: rgb(197, 230, 11);
+            background: #c5e60b52;
+            font-size: 80%;
+            padding: 16px;
         }
         .links-block {
             grid-area: links;
-            background: rgb(19, 28, 150);
+            background: #131c9646;  
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            padding: 16px;
+        }
+        .links-block>a {
+            display: inline-block;
+            height: 48px;
+            width: 48px;
+            margin: 4px;
+            background :darksalmon;
         }
     </style>
 </head>
 <body>
     <div id="page1" class="short-info">
-        <div class="photo-block"></div>
-        <div class="name-block"></div>
-        <div class="about-me-block"></div>
-        <div class="links-block"></div>
+        <div class="photo-block">
+            <div class="photo-image"></div>
+        </div>
+        <div class="name-block">
+            MAYBE
+        </div>
+        <div class="about-me-block">
+                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+        </div>
+        <div class="links-block">
+            <a href="#page1" class="link-vk"></a>
+            <a href="#page1" class="link-twitter"></a>
+            <a href="#page1" class="link-instagram"></a>
+        </div>
     </div>
     
 </body>
