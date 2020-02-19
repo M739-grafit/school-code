@@ -38,7 +38,7 @@ body {
     background-position: center;
 }
 .name-block {
-    position: relative;
+    position: relative; 
     grid-area: name;
     display: flex;
     align-items: flex-end;
@@ -86,21 +86,20 @@ body {
 }
 
 
-@media (max-width: 480px) {
-    .photo-image {
-        width: 120px;
-        height: 120px;
-    }
-    .name-block {
-        font-size: 180%;
-        padding: 8px;
-    }
-    .about-me-block {
-        font-size: 100%;
-        padding: 8px;
-    }
-    .anchor-link {
-        margin: 8px;
+@media (max-width: 650px) {
+    .short-info {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1.62fr;
+        grid-template-rows: 1fr 1fr auto;
+        grid-template-areas:
+            "photo name"
+            "photo about"
+            "links links";
+        overflow: hidden;
+        height: 100vh;
+        background: #000000;
+        margin: 0px;
     }
 }
 @media (max-width: 320px) {
