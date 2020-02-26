@@ -7,9 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body { 
             font-size: 16px;
             padding: 0px;
+        }
+        .page-block{
+            height: auto;
+            min-height: 100vh;
         }
         .short-info {
             position: relative;
@@ -82,6 +89,16 @@
             background: url(https://freeiconshop.com/wp-content/uploads/edd/instagram-new-flat.png)
                         no-repeat 50% / contain;
         }
+        .link-next {
+            display: inline-flex;
+            position: relative;
+            align-self: center;
+            background:#a7148e;
+            color: rgb(255, 255, 255);
+            padding: 8px 16px;
+            text-decoration: rgb(25, 34, 156);
+            font-size: 150%;
+        }
 
         @media (max-width: 400px) {
             .short-info {
@@ -110,7 +127,7 @@
         }
     </style>
 </head>
-<body>
+<body> 
     <div id="page1" class="short-info">
         <div class="photo-block">
             <div class="photo-image"></div>
@@ -120,13 +137,23 @@
         </div>
         <div class="about-me-block">
                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
-        </div>
+
+                <a href="#page2" class="link-next">далее</a>       
+             </div>
         <div class="links-block">
             <a href="#page1" class="link-vk"></a>
             <a href="#page1" class="link-twitter"></a>
             <a href="#page1" class="link-instagram"></a>
         </div>
     </div>
-    
+    <div id="page2" class="page-block">
+        <h3>Блок с информацией №2<h3>
+        </div>
+            <div id="page3" class="page-block">
+                <h3>Блок с информацией №3</h3>
+            </div> 
+            <div id="page4" class="page-block">
+                <h3>Блок с информацией №4</h3>  
+            </div>      
 </body>
 </html>
