@@ -1,0 +1,80 @@
+#page-gallery {
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3em 0px;
+    background: #25508C;
+}
+
+#page-gallery .card {
+    background-color: #ffffff;
+    margin: 16px;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 2px #00000070;
+}
+#page-gallery .card .photo {
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#page-gallery .card::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: -10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-image: url(https://lh3.googleusercontent.com/proxy/lyBwycGBECP3PaG9QWgTxbYtSJbVtDm6H81bI067-Pi3VWxmASkTlCmvgpO5fwpAMAiqA2aD_sGfFCWn90hmYH-HGnM_q0QSklWg4Ns09zT2Vb6XYGBLTUEI1quTnxVJEOnRQhlVG6yiGJXgydk);
+    background-position: center;
+    background-size: contain;
+}
+
+#page-gallery .card:nth-child(3n+1)::after { left: 55%; }
+#page-gallery .card:nth-child(3n+1) { transform: rotateZ(-1deg); }
+#page-gallery .card:nth-child(3n+2)::after { left: 45%; }
+#page-gallery .card:nth-child(3n+2) { transform: rotateZ(1deg); }
+#page-gallery .card:nth-child(3n+3)::after { left: 40%;}
+#page-gallery .card:nth-child(3n+3) { transform: rotateZ(2deg); }
+
+#page-gallery .card:nth-child(1) .photo {
+    background-image: url(https://upload.wikimedia.org/wikipedia/ru/thumb/8/8e/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_Dota_2.jpg/266px-%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_Dota_2.jpg);
+}
+#page-gallery .card:nth-child(2) .photo {
+    background-image: url(https://cs8.pikabu.ru/post_img/big/2016/11/13/0/147898603016220860.jpg);
+}
+#page-gallery .card:nth-child(3) .photo {
+    background-image: url(https://lh3.googleusercontent.com/proxy/8nbow_fIaRglGYBUr7g1QGYx6PjISd9s7wbEYn1nFlNKyx207J3wwNfrrrjI_NuhWc9qzeJlLesjqVWHB5MVGF2Ygz5T0tTzhVzcSG_vlRIMbJb-XWKz2E-OXPgWGiMIZOZivgzSapAUaj4BpjttvlMKWBBkYI6WZwokqzDA2FDcCi0s8mFp7s0ob7XJ8EDt3nk5);
+}
+#page-gallery .card:nth-child(4) .photo {
+    background-image: url(https://avatarko.ru/img/kartinka/20/igra_Dota_2_Drow_Ranger_19400.jpg);
+    background-position: left;
+}
+#page-gallery .card:nth-child(5) .photo {
+    background-image: url(https://lh3.googleusercontent.com/proxy/-G1RMqHoLjDUUUH1X5H7Wb8DA_5lR06cPecwvPYmY1zQqEQJqfUJz8LdjH5rm04S9Lto3t5j0gBOGP-SLx69cDUsbojaB0Es_cB4sFHlDDFfrNKQxwS68zsMjwKIwB-l5I_B);
+    background-position: left
+}
+#page-gallery .card:nth-child(6) .photo {
+    background-image: url(https://lh3.googleusercontent.com/proxy/rz0IYa9ft_iyqnjboFwTroAOFUH2SV3StwtzLvXV2DSbM7HthYOoFt0d_oJWnA5I5NYjHA-9H9egKodRchORL9EimnAzQJPVnjJCXkvAyGYgRMEjgQ7mTDmTyHzrFen66D1KS88GuklcIq6KQQanbMK6t6IEitcF3MhMPONbzKXibK8eyzJ-Oayg9MXw2CW9Za7WyrTB);
+    background-position: left;
+}
+#page-gallery .card:nth-child(7) .photo {
+    background-image: url(https://lh3.googleusercontent.com/proxy/rbFRDk0z3-PX_1812gHNtEUvQZmkLDtlNGdM__ybcyZiAEldy1UXFMSrdCa8QIABw37yNqe0Yv5AUIfgUOUF7rNTwwmpl1cE9BYenw4_k1UxjStrwseFGwac0EUW__QpDVVLQVMAAZ1Qm1we6SSIIlh_y2sRMShPj6cHQ3xxEBqHKqjQYLSmapWmRO9t7wcwWPAv7oI);
+    background-position: right;
+}
+#page-gallery .card:nth-child(8) .photo {
+    background-image: url(https://s12.stc.all.kpcdn.net/share/i/12/10575330/inx960x640.jpg);
+    background-image: url(https://lh3.googleusercontent.com/proxy/UaB4hT9wjpNBo2aGrCD6WyTclISP8-11HDP0EGSv7tQs-VGy0-vLQHuP0EHEmmcNJ_d3Z5gjnVD6N4lzFrRJUkcHBJOr7O_a5spsZKDyywAgs0tCfAmrGBcH2RCpwgBVEMc36js5XxC0AWQjjkvKszMpp9BokdOQ2UmJFW2uom8mzGSwmkeJZuU8mmIWWaCxaRF5iQ);
+    background-position: right;
+}
+#page-gallery .card:nth-child(9) .photo {
+    background-image: url(https://lh3.googleusercontent.com/proxy/Uv9MRxnmts3ncDsRB4ptwxe7Ej92gu7_gMsCDpzI5jobdrocXKfbhFAxvyWK9nLprSHWpXwu7BkR3lAi96iJY5nhqm25DmYvRKodi8pVN6_6-DRyQ25p8esa-JUHRRFRwqhEhk1xWA_bsdKAE02woe3nLedXyhal9MXAW6nyD7AemuMVXTYg9dDX2Oi5fwJTVuWgldHNHIT-7Ryc);
+    background-position: right;
+}
